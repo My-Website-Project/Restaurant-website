@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ITE Mhub Khmer – Khmer Restaurant</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#"> &#129367 Mhub<span>Khmer</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-reserve" href="#reservation">Reserve a Table</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="hero-badge"> &#127858 Authentic Khmer Cuisine</div>
+        <h1>Taste the Delicious<br>from <em>Cambodia</em></h1>
+        <p>Experience the rich, fragrant flavors of traditional Khmer recipes passed down through generations — crafted fresh every day in Phnom Penh.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#menu" class="btn btn-primary-custom">Explore Menu</a>
+          <a href="#reservation" class="btn btn-outline-custom">Book a Table</a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="hero-img-wrap">
+          <img src="luk_lak2.webp" alt="Khmer food spread"/>
+          <div class="hero-badge-float">
+            <div class="icon"><i class="bi bi-star-fill"></i></div>
+            <div>
+              <strong>4.8 / 5.0</strong>
+              <span>Over 2,400 reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="row g-3 text-center">
+      <div class="col-6 col-md-3"><div class="stat-item"><div class="num">15+</div><p>Years of Tradition</p></div></div>
+      <div class="col-6 col-md-3"><div class="stat-item"><div class="num">80+</div><p>Menu Items</p></div></div>
+      <div class="col-6 col-md-3"><div class="stat-item"><div class="num">500+</div><p>Happy Guests / Day</p></div></div>
+      <div class="col-6 col-md-3"><div class="stat-item"><div class="num">3</div><p>Chef Awards</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <img src="fish_almok.jpg" alt="Our Kitchen" class="about-img"/>
+      </div>
+      <div class="col-lg-7">
+        <p class="section-label">Our Story</p>
+        <h2 class="mb-3">Where Every Dish<br>Tells a Story</h2>
+        <p class="mb-4">Founded in 2023 in the heart of Phnom Penh, Mhub khmer was born from a family passion for preserving authentic Khmer culinary heritage. Our chefs use centuries-old recipes with the finest local ingredients — fresh herbs, Kampot pepper, and lemongrass from trusted local farms.</p>
+        <div class="about-feature">
+          <div class="icon"><i class="bi bi-leaf"></i></div>
+          <div><h6>Fresh Local Ingredients</h6><p>Sourced daily from Phnom Penh markets and trusted Cambodian farms.</p></div>
+        </div>
+        <div class="about-feature">
+          <div class="icon"><i class="bi bi-fire"></i></div>
+          <div><h6>Traditional Cooking Methods</h6><p>Clay pots, open flames, and slow-cooked broths just like grandmother made.</p></div>
+        </div>
+        <div class="about-feature">
+          <div class="icon"><i class="bi bi-award"></i></div>
+          <div><h6>Award-Winning Cuisine</h6><p>Recognized by Cambodia Tourism Board three years running.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MENU -->
+<section class="menu-section" id="menu">
+  <div class="container">
+    <div class="section-title">
+      <p class="label">What We Serve</p>
+      <h2>Our Signature Menu</h2>
+    </div>
+    <ul class="nav nav-pills justify-content-center mb-4 menu-tabs gap-2" id="menuTabs">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#appetizers">Appetizers</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#mains">Main Dishes</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#desserts">Desserts</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#drinks">Drinks</button></li>
+    </ul>
+    <div class="tab-content">
+
+      <!-- Appetizers -->
+      <div class="tab-pane fade show active" id="appetizers">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="nem1.jpg" alt="Spring Rolls"/>
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h5>Nem Cheoung</h5><span class="badge-popular">Popular</span>
+                </div>
+                <p>Crispy Khmer spring rolls with herb dipping sauce</p>
+                <span class="price">$4.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="samlar Machou1.jpg" alt="Soup"/>
+              <div class="menu-card-body">
+                <h5>Samlar Machou</h5>
+                <p>Sour soup with lemongrass, meat, and fresh vegetables</p>
+                <span class="price">$5.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="Glass noodle salad.jpg" alt="Salad"/>
+              <div class="menu-card-body">
+                <h5>Glass Noodle Salad</h5>
+                <p>Noodle salad with shrimp and mix vegetable</p>
+                <span class="price">$3.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="sach ko ang.webp" alt="Satay"/>
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h5>Sach Ko Ang</h5><span class="badge-popular">Popular</span>
+                </div>
+                <p>Grilled beef with spices</p>
+                <span class="price">$3.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Dishes -->
+      <div class="tab-pane fade" id="mains">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="fish amok2.jpg" alt="Fish Amok"/>
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h5>Fish Amok</h5><span class="badge-popular">Chef's Pick</span>
+                </div>
+                <p>National dish — steamed fish in coconut kroeung curry</p>
+                <span class="price">$10.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="luk_lak.jpg" alt="Lok Lak"/>
+              <div class="menu-card-body">
+                <h5>Lok Lak</h5>
+                <p>Wok-tossed beef with lime-pepper dipping sauce and egg</p>
+                <span class="price">$9.50</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="kuy teav.jpg" alt="Kuy Teav"/>
+              <div class="menu-card-body">
+                <h5>Kuy Teav</h5>
+                <p>Rice noodle soup with pork broth, herbs &amp; bean sprouts</p>
+                <span class="price">$8.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="samlar kako.jpg" alt="Samlar Kako"/>
+              <div class="menu-card-body">
+                <h5>Samlar Kako</h5>
+                <p>Mixed vegetable stew with roasted coconut and tofu</p>
+                <span class="price">$7.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="tab-pane fade" id="desserts">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="num ansom.jpeg" alt="Num Ansom"/>
+              <div class="menu-card-body">
+                <h5>Num Ansom</h5>
+                <p>Sticky rice cake with banana and coconut milk in banana leaf</p>
+                <span class="price">$3.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="ah kor thnort.jpg" alt="ah kor thnort"/>
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-1">
+                  <h5>Ah Kor Thnort</h5><span class="badge-popular">Popular</span>
+                </div>
+                <p>Coconut rice pudding with palm sugar</p>
+                <span class="price">$3.50</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="Num plae ai.jpg" alt="Num Plae Ai"/>
+              <div class="menu-card-body">
+                <h5>Num Plae Ai</h5>
+                <p>Sesame and palm sugar sticky balls — a street classic</p>
+                <span class="price">$2.50</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="num kong.jpg" alt="Num kong"/>
+              <div class="menu-card-body">
+                <h5>Num Kong</h5>
+                <p>Khmer donut </p>
+                <span class="price">$2.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="tab-pane fade" id="drinks">
+        <div class="row g-4">
+          <div class="col-md-3 col-lg-2">
+            <div class="menu-card">
+              <img src="macha1.webp" alt="Macha"/>
+              <div class="menu-card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5>Macha</h5><span class="badge-popular">Refreshing</span>
+                </div>
+                <p>Fresh-pressed sugar cane juice with lime</p>
+                <span class="price">$2.50</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="ice tea.webp" alt="Jasmine Tea"/>
+              <div class="menu-card-body">
+                <h5>Jasmine Iced Tea</h5>
+                <p>Traditional Khmer jasmine tea served cold with honey</p>
+                <span class="price">$1.50</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="coffee.png" alt="Coffee"/>
+              <div class="menu-card-body">
+                <h5>Cambodian Coffee</h5>
+                <p>Strong drip coffee with sweetened condensed milk on ice  coffee from Modolkiri</p>
+                <span class="price">$2.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="menu-card">
+              <img src="tropical-smoothie2.webp" alt="Smoothie"/>
+              <div class="menu-card-body">
+                <h5>Tropical Smoothie</h5>
+                <p>Mango, pineapple &amp; coconut blended with a hint of ginger</p>
+                <span class="price">$3.50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-title">
+      <p class="label">Visual Feast</p>
+      <h2>From Our Kitchen &amp; Tables</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item big">
+        <img src="enviroment1.avif" alt="Interior"/>
+        <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="image shop.webp" alt="enviroment"/>
+        <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="luk_lak2.webp" alt="Lok Lak"/>
+        <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Samlar Machou.jpg" alt="Soup"/>
+        <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="sach ko ang.webp" alt="Grill"/>
+        <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="reviews">
+  <div class="container">
+    <div class="section-title">
+      <p class="label">Guest Voices</p>
+      <h2>What People Say</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"The Fish Amok was absolutely unforgettable — rich, aromatic, and deeply authentic. I felt transported straight to the streets of Phnom Penh."</p>
+          <div class="author">
+            <img src="seng sok heng.jpg" alt="seng sok heng" class="avatar">
+            <div><strong>Seng Sok heng</strong><span>Phnom Penh Local</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Best Lok Lak in the city, bar none. The service was warm and the ambiance really captures Khmer culture. We'll be back every visit."</p>
+          <div class="author">
+          <img src="peng chhiev.jpg" alt="seng sok heng" class="avatar">
+            <div><strong>Sev Peng Chhiev</strong><span>Traveler from France</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"I brought my whole family here for my father's birthday. The food was exceptional and the staff made us feel like royalty. Highly recommend!"</p>
+          <div class="author">
+            <img src="phearun.jpg" alt="seng sok heng" class="avatar">
+            <div><strong>Seng Phearun</strong><span>Siem Reap Visitor</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reservation-section" id="reservation">
+  <div class="container">
+    <div class="section-title">
+      <p class="label" style="color:var(--green-mid)">Dine With Us</p>
+      <h2>Reserve Your Table</h2>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="res-form-wrap">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label fw-bold">Full Name</label>
+              <input type="text" class="form-control" placeholder="Your name"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-bold">Phone Number</label>
+              <input type="tel" class="form-control" placeholder="+855 xx xxx xxx"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-bold">Date</label>
+              <input type="date" class="form-control"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-bold">Time</label>
+              <select class="form-select">
+                <option>11:00 AM</option><option>12:00 PM</option>
+                <option>1:00 PM</option><option>6:00 PM</option>
+                <option>7:00 PM</option><option>8:00 PM</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-bold">Number of Guests</label>
+              <select class="form-select">
+                <option>1 person</option><option>2 persons</option>
+                <option>3–4 persons</option><option>5–8 persons</option>
+                <option>9+ persons (group)</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control" placeholder="your@email.com"/>
+            </div>
+            <div class="col-12">
+              <label class="form-label fw-bold">Special Requests</label>
+              <textarea class="form-control" rows="3" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-book">🌿 Confirm Reservation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="res-info-card">
+          <h3>Visit Us</h3>
+          <div class="info-item">
+            <div class="icon"><i class="bi bi-geo-alt"></i></div>
+            <div><strong>Address</strong><span>11 , Tk, Phnom Penh, Cambodia</span></div>
+          </div>
+          <div class="info-item">
+            <div class="icon"><i class="bi bi-clock"></i></div>
+            <div>
+              <strong>Opening Hours</strong>
+              <span>Mon–Sat: 10:00 AM – 10:00 PM</span><br>
+              <span>Sunday: 11:00 AM – 9:00 PM</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon"><i class="bi bi-telephone"></i></div>
+            <div><strong>Phone</strong><span>+855 23 456 789</span></div>
+          </div>
+          <div class="info-item">
+            <div class="icon"><i class="bi bi-envelope"></i></div>
+            <div><strong>Email</strong><span>ITE@MhubKhmer.com</span></div>
+          </div>
+          <div class="mt-3">
+  <iframe
+    src="https://www.google.com/maps?q=RUPP+STEM+Building&output=embed"
+    width="100%"
+    height="160"
+    style="border:0;border-radius:12px;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="brand">	&#127817 Mhub Khmer</div>
+        <p>Celebrating the rich heritage of Khmer cuisine since 2023. Proudly rooted in Phnom Penh, Cambodia.</p>
+        <div class="social-links mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+          <a href="#"><i class="bi bi-telegram"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Cuisine</h6>
+        <ul>
+          <li><a href="#">Fish Amok</a></li>
+          <li><a href="#">Lok Lak</a></li>
+          <li><a href="#">Kuy Teav</a></li>
+          <li><a href="#">Samlar Kako</a></li>
+          <li><a href="#">Desserts</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6>Newsletter</h6>
+        <p>Get weekly specials and events straight to your inbox.</p>
+        <div class="d-flex gap-2">
+          <input type="email" class="form-control form-control-sm" placeholder="Email address"
+            style="background:#1c2e22;border-color:#2d4a35;color:#fff"/>
+          <button class="btn btn-sm btn-reserve flex-shrink-0">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <p class="footer-bottom">© 2025 ITE Mhub Khmer Restaurant. All rights reserved. | Phnom Penh, Cambodia</p>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button id="toTop" title="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const btn = document.getElementById('toTop');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const collapse = document.getElementById('navMenu');
+      if (collapse.classList.contains('show')) {
+        bootstrap.Collapse.getInstance(collapse)?.hide();
+      }
+    });
+  });
+</script>
+</body>
+</html>
